@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('wishes', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('wishlist_id');
+            $table->string('title');
+            $table->string('description');
+            $table->string('url');
+            $table->integer('amount');
             $table->timestamps();
         });
     }
