@@ -1,6 +1,3 @@
-
-
-
 ```yaml
 users:
     Attributes:
